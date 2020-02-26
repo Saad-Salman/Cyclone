@@ -44,6 +44,7 @@ ytest1 = standard_y.transform(ytest1)
 
 Multiresult1 = MLPRegressor(hidden_layer_sizes=(10,), random_state=51, max_iter=3000, warm_start=True).fit(Xtrain, ytrain).predict(Xtest1)
 Multiresulttrain = MLPRegressor(hidden_layer_sizes=(10,), random_state=51, max_iter=3000, warm_start=True).fit(Xtrain, ytrain).predict(Xtrain)
+Multiresulttrain = MLPRegressor(hidden_layer_sizes=(13,), random_state=1, max_iter=3000, warm_start=True).fit(Xtrain, ytrain).predict(Xtrain)
 
 "R2 and Pearsonr"
 #from sklearn.metrics import r2_score
