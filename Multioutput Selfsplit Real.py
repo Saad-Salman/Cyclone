@@ -32,9 +32,6 @@ Xtest1 = np.array(DataT.iloc[0:10,[0,1,2,3,4,5]].values)
 ytest1 = np.array(DataT.iloc[0:10,[6,7]].values)
 
 
-
-#print(Xtest)
-#print(ytest)
 Xtest1 = standard_X.transform(Xtest1)
 ytest1 = standard_y.transform(ytest1)
 
