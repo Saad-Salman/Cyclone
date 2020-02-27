@@ -14,8 +14,7 @@ from sklearn.preprocessing import StandardScaler
 Data = pd.read_excel(r'C:\Users\Saad\Desktop\Data\woc_revised.xlsx')
 Xtrain = np.array(Data.iloc[:,[0,1,2,3,4,5]].values)
 ytrain = np.array(Data.iloc[:,[6,7]].values)
-#print(Xtrain)
-#print(ytrain)
+
 "Standardizing"
 standard_X = StandardScaler()
 standard_y = StandardScaler()
